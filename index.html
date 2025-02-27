@@ -131,8 +131,8 @@
           
         <!--  -->
 
-        <section class="flex flex-col w-full gap-8 px-16 max-md:px-8 max-sm:px-4 mt-[175px] sm:mt-[200px] max-w-[1320px]">
-            <div class="flex justify-center items-center mb-2">
+        <section class="flex flex-col w-full gap-6 px-16 max-md:px-8 max-sm:px-4 mt-[175px] sm:mt-[200px] max-w-[1320px]">
+            <div class="flex justify-center items-center">
                 <h3 class="text-4xl max-sm:text-xl font-extrabold text-[#a72d8f] border-b border-[#a72d8f] pb-2">Explore by Categories</h3>
                 
             </div>
@@ -172,16 +172,25 @@
         </section>
         <!--  -->
 
-        <section class="grid grid-cols-3 w-full px-16 max-md:px-8 max-sm:px-4 mt-[60px] max-w-[1320px]">
-            <img src="./assets/latest-deal-ad1.png" alt="" srcset="">
-            <img src="./assets/latest-deal-ad2.png" alt="" srcset="">
-            <img src="./assets/latest-deal-ad3.png" alt="" srcset="">
+        <section class="flex flex-col w-full gap-6 px-16 max-md:px-8 max-sm:px-4 mt-[60px] max-w-[1320px]">
+            <!-- Section Header -->
+            <div class="flex justify-between items-center">
+                <h3 class="text-3xl max-sm:text-xl font-extrabold text-[#a72d8f] border-b border-[#a72d8f] pb-2">Latest Deal</h3>
+                <button class="px-4 py-2 border border-[#a72d8f] text-[#a72d8f] rounded-lg hover:bg-[#a72d8f] hover:text-gray-400">
+                    View all →
+                </button>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 sm:gap-1">
+                <img class="w-full" src="./assets/latest-deal-ad1.png" alt="" srcset="">
+                <img class="w-full" src="./assets/latest-deal-ad2.png" alt="" srcset="">
+                <img class="w-full" src="./assets/latest-deal-ad3.png" alt="" srcset="">
+            </div>
         </section>
         <!--  -->
 
-        <section class="max-w-7xl mx-auto w-full px-16 max-md:px-8 max-sm:text-[14px] max-sm:px-4 mt-[60px] max-w-[1320px]">
+        <section class="flex flex-col max-w-7xl mx-auto w-full gap-6 px-16 max-md:px-8 max-sm:text-[14px] max-sm:px-4 mt-[60px] max-w-[1320px]">
             <!-- Section Header -->
-            <div class="flex justify-between items-center mb-2">
+            <div class="flex justify-between items-center">
                 <h3 class="text-3xl max-sm:text-xl font-extrabold text-[#a72d8f] border-b border-[#a72d8f] pb-2">Best Selling</h3>
                 <button class="px-4 py-2 border border-[#a72d8f] text-[#a72d8f] rounded-lg hover:bg-[#a72d8f] hover:text-gray-400">
                     View all →
@@ -189,12 +198,12 @@
             </div>
     
             <!-- Product Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-sm:gap-1">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-6">
                 
                 <!-- Product Card -->
                 <div class="border border-gray-300 rounded-lg p-4 max-sm:p-1 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Shirt</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -203,7 +212,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -212,7 +221,7 @@
                 <!-- Duplicate Product Cards -->
                 <div class="border border-gray-300 rounded-lg p-4 max-sm:p-1 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Saree</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -221,7 +230,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -229,7 +238,7 @@
     
                 <div class="border border-gray-300 rounded-lg p-4 max-sm:p-1 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Air Pod</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -238,7 +247,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -246,7 +255,7 @@
     
                 <div class="border border-gray-300 rounded-lg p-4 max-sm:p-1 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Watch</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -255,7 +264,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -263,7 +272,7 @@
     
                 <div class="border border-gray-300 rounded-lg p-4 max-sm:p-1 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Ear Rings</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -272,7 +281,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -283,8 +292,8 @@
         </section>
         <!--  -->
 
-        <section class="flex flex-col w-full mt-[60px] max-w-[1320px] max-sm:text-[14px] px-16 max-md:px-8 max-sm:px-4 gap-6">
-            <div class="flex justify-between items-center mb-2">
+        <section class="flex flex-col w-full gap-6 mt-[60px] max-w-[1320px] max-sm:text-[14px] px-16 max-md:px-8 max-sm:px-4">
+            <div class="flex justify-between items-center">
                 <h3 class="text-3xl max-sm:text-xl font-extrabold text-[#a72d8f] border-b border-[#a72d8f] pb-2">Deal Of The Week</h3>
                 <button class="px-4 py-2 border border-[#a72d8f] text-[#a72d8f] rounded-lg hover:bg-[#a72d8f] hover:text-gray-400">
                     View all →
@@ -294,9 +303,9 @@
         </section>
         <!--  -->
 
-        <section class="max-w-7xl w-full mt-[60px] px-16 max-md:px-8 max-sm:px-4 max-sm:text-[14px] flex flex-col gap-8 mx-auto">
+        <section class="max-w-7xl w-full gap-6 mt-[60px] px-16 max-md:px-8 max-sm:px-4 max-sm:text-[14px] flex flex-col mx-auto">
             <!-- Header -->
-            <div class="flex justify-between items-center mb-2">
+            <div class="flex justify-between items-center">
                 <h3 class="text-3xl max-sm:text-xl font-extrabold text-[#a72d8f] border-b border-[#a72d8f] pb-2">Featured Products</h3>
                 <button class="px-4 py-2 border border-[#a72d8f] text-[#a72d8f] rounded-lg hover:bg-[#a72d8f] hover:text-gray-400">
                     View all →
@@ -307,12 +316,12 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
                 
                 <!-- Product Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-sm:gap-1 md:col-span-3">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-6 md:col-span-3">
                     
                     <!-- Card -->
                     <div class="bg-white flex items-center gap-4 rounded-lg border border-gray-300 shadow-lg p-4 max-sm:p-1">
                         <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-1/2 h-40 object-cover rounded-lg">
-                        <div class="mt-4">
+                        <div class="mt-4 pl-2">
                             <h4 class="text-lg font-semibold">Shirt</h4>
                             <div class="flex items-center text-yellow-500 text-sm">
                                 ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -321,7 +330,7 @@
                                 <p class="text-red-500 text-lg font-bold">Tk20</p>
                                 <p class="text-gray-500 line-through">Tk40</p>
                             </div>
-                            <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                            <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                                 <i class="bi bi-cart-dash"></i> Add To Cart
                             </button>
                         </div>
@@ -329,7 +338,7 @@
     
                     <div class="bg-white flex items-center gap-4 rounded-lg border border-gray-300 shadow-lg p-4 max-sm:p-1">
                         <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-1/2  h-40 object-cover rounded-lg">
-                        <div class="mt-4">
+                        <div class="mt-4 pl-2">
                             <h4 class="text-lg font-semibold">Saree</h4>
                             <div class="flex items-center text-yellow-500 text-sm">
                                 ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -338,7 +347,7 @@
                                 <p class="text-red-500 text-lg font-bold">Tk20</p>
                                 <p class="text-gray-500 line-through">Tk40</p>
                             </div>
-                            <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                            <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                                 <i class="bi bi-cart-dash"></i> Add To Cart
                             </button>
                         </div>
@@ -346,7 +355,7 @@
     
                     <div class="bg-white flex items-center gap-4 rounded-lg border border-gray-300 shadow-lg p-4 max-sm:p-1">
                         <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-1/2 h-40 object-cover rounded-lg">
-                        <div class="mt-4">
+                        <div class="mt-4 pl-2">
                             <h4 class="text-lg font-semibold">Air Pod</h4>
                             <div class="flex items-center text-yellow-500 text-sm">
                                 ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -355,7 +364,7 @@
                                 <p class="text-red-500 text-lg font-bold">Tk20</p>
                                 <p class="text-gray-500 line-through">Tk40</p>
                             </div>
-                            <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                            <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                                 <i class="bi bi-cart-dash"></i> Add To Cart
                             </button>
                         </div>
@@ -363,7 +372,7 @@
     
                     <div class="bg-white flex items-center gap-4 rounded-lg border border-gray-300 shadow-lg p-4 max-sm:p-1">
                         <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-1/2  h-40 object-cover rounded-lg">
-                        <div class="mt-4">
+                        <div class="mt-4 pl-2">
                             <h4 class="text-lg font-semibold">Watch</h4>
                             <div class="flex items-center text-yellow-500 text-sm">
                                 ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -372,7 +381,7 @@
                                 <p class="text-red-500 text-lg font-bold">Tk20</p>
                                 <p class="text-gray-500 line-through">Tk40</p>
                             </div>
-                            <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                            <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                                 <i class="bi bi-cart-dash"></i> Add To Cart
                             </button>
                         </div>
@@ -389,9 +398,9 @@
         </section>
         <!--  -->
 
-        <section class=" mx-auto w-full px-16 max-md:px-8 max-sm:px-4 max-sm:text-[14px] max-w-[1320px] mt-[70px]">
+        <section class="flex flex-col mx-auto w-full gap-6 px-16 max-md:px-8 max-sm:px-4 max-sm:text-[14px] max-w-[1320px] mt-[70px]">
             <!-- Section Header -->
-            <div class="flex justify-between items-center mb-2">
+            <div class="flex justify-between items-center">
                 <h3 class="text-3xl max-sm:text-xl font-extrabold text-[#a72d8f] border-b border-[#a72d8f] pb-2">Electronic Accessories</h3>
                 <button class="px-4 py-2 border border-[#a72d8f] text-[#a72d8f] rounded-lg hover:bg-[#a72d8f] hover:text-gray-400">
                     View all →
@@ -399,15 +408,15 @@
             </div>
     
             <!-- Product Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-sm:gap-1">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-6">
                 
-                <img class="w-full h-full" src="./assets/electronic-ad.png" alt="" srcset="">
+                <img class="w-full max-sm:hidden h-full" src="./assets/electronic-ad.png" alt="" srcset="">
                 <!-- Product Card -->
     
                 <!-- Duplicate Product Cards -->
                 <div class="border border-gray-300 rounded-lg p-4 max-sm:p-1 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Saree</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -416,7 +425,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -424,7 +433,7 @@
     
                 <div class="border border-gray-300 rounded-lg p-4 max-sm:p-1 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Air Pod</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -433,7 +442,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -441,7 +450,7 @@
     
                 <div class="border border-gray-300 rounded-lg p-4 max-sm:p-1 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Watch</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -450,7 +459,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -458,7 +467,7 @@
     
                 <div class="border border-gray-300 rounded-lg p-4 max-sm:p-1 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Ear Rings</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -467,19 +476,21 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
                 </div>
+
+                <img class="w-full sm:" src="./assets/electronic-ad.png" alt="" srcset="">
     
             </div>
         </section>
         <!--  -->
 
-        <section class="mx-auto w-full px-16 max-md:px-8 max-sm:px-4 max-sm:text-[14px] max-w-[1320px] mt-[70px]">
+        <section class="flex flex-col mx-auto w-full gap-6 px-16 max-md:px-8 max-sm:px-4 max-sm:text-[14px] max-w-[1320px] mt-[70px]">
             <!-- Section Header -->
-            <div class="flex justify-between items-center mb-2">
+            <div class="flex justify-between items-center">
                 <h3 class="text-3xl max-sm:text-xl font-extrabold text-[#a72d8f] border-b border-[#a72d8f] pb-2">Baby Products</h3>
                 <button class="px-4 py-2 border border-[#a72d8f] text-[#a72d8f] rounded-lg hover:bg-[#a72d8f] hover:text-gray-400">
                     View all →
@@ -487,14 +498,14 @@
             </div>
     
             <!-- Product Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-sm:gap-1">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-6">
                 
                 <!-- Product Card -->
     
                 <!-- Duplicate Product Cards -->
                 <div class="border border-gray-300 rounded-lg p-4 max-sm:p-1 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Saree</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -503,7 +514,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -511,7 +522,7 @@
     
                 <div class="border border-gray-300 rounded-lg p-4 max-sm:p-1 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Air Pod</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -520,7 +531,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -528,7 +539,7 @@
     
                 <div class="border border-gray-300 rounded-lg p-4 max-sm:p-1 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Watch</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -537,7 +548,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -545,7 +556,7 @@
     
                 <div class="border border-gray-300 rounded-lg p-4 max-sm:p-1 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Ear Rings</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -554,7 +565,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -573,8 +584,8 @@
             </div>
         </section>
 
-        <section class="flex flex-col gap-4 w-full max-w-[1320px] max-sm:text-[14px] px-16 max-md:px-8 max-sm:px-4 mt-[70px]">
-            <div class="flex justify-between items-center mb-2">
+        <section class="flex flex-col gap-6 w-full max-w-[1320px] max-sm:text-[14px] px-16 max-md:px-8 max-sm:px-4 mt-[70px]">
+            <div class="flex justify-between items-center">
                 <h3 class="text-3xl max-sm:text-xl font-extrabold text-[#a72d8f] border-b border-[#a72d8f] pb-2">Top Brands</h3>
                 <button class="px-4 py-2 border border-[#a72d8f] text-[#a72d8f] rounded-lg hover:bg-[#a72d8f] hover:text-gray-400">
                     View all →
@@ -591,7 +602,7 @@
         </section>
 
         <section class="flex flex-col gap-6 w-full max-w-[1320px] max-sm:text-[14px] px-16 max-md:px-8 max-sm:px-4 mt-[70px]">
-            <div class="flex justify-between items-center mb-2">
+            <div class="flex justify-between items-center">
                 <h3 class="text-3xl max-sm:text-xl font-extrabold text-[#a72d8f] border-b border-[#a72d8f] pb-2">Top Categories</h3>
                 <button class="px-4 py-2 border border-[#a72d8f] text-[#a72d8f] rounded-lg hover:bg-[#a72d8f] hover:text-gray-400">
                     View all →
@@ -610,7 +621,7 @@
         </section>
     
         <section class="flex flex-col gap-6 w-full max-w-[1320px] max-sm:text-[14px] px-16 max-md:px-8 max-sm:px-4 mt-[70px]">
-            <div class="flex justify-between items-center mb-2">
+            <div class="flex justify-between items-center">
                 <h3 class="text-3xl max-sm:text-xl font-extrabold text-[#a72d8f] border-b border-[#a72d8f] pb-2">Suggest For You</h3>
                 <button class="px-4 py-2 border border-[#a72d8f] text-[#a72d8f] rounded-lg hover:bg-[#a72d8f] hover:text-gray-400">
                     View all →
@@ -643,12 +654,12 @@
                 </button>
             </div>
             <!-- Product Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-sm:gap-1">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-6">
                 
                 <!-- Product Card -->
                 <div class="border border-gray-300 max-sm:p-1 rounded-lg p-4 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Shirt</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -657,7 +668,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -666,7 +677,7 @@
                 <!-- Duplicate Product Cards -->
                 <div class="border border-gray-300 max-sm:p-1 rounded-lg p-4 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Saree</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -675,7 +686,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -683,7 +694,7 @@
     
                 <div class="border border-gray-300 max-sm:p-1 rounded-lg p-4 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Air Pod</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -692,7 +703,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -700,7 +711,7 @@
     
                 <div class="border border-gray-300 max-sm:p-1 rounded-lg p-4 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Watch</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -709,7 +720,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -717,7 +728,7 @@
     
                 <div class="border border-gray-300 max-sm:p-1 rounded-lg p-4 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Ear Rings</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -726,7 +737,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -734,7 +745,7 @@
 
                 <div class="border border-gray-300 max-sm:p-1 rounded-lg p-4 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Saree</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -743,7 +754,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -751,7 +762,7 @@
     
                 <div class="border border-gray-300 max-sm:p-1 rounded-lg p-4 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Air Pod</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -760,7 +771,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -768,7 +779,7 @@
     
                 <div class="border border-gray-300 max-sm:p-1 rounded-lg p-4 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Watch</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -777,7 +788,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -785,7 +796,7 @@
     
                 <div class="border border-gray-300 max-sm:p-1 rounded-lg p-4 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Ear Rings</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -794,7 +805,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -802,7 +813,7 @@
 
                 <div class="border border-gray-300 max-sm:p-1 rounded-lg p-4 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Saree</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -811,7 +822,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -819,7 +830,7 @@
     
                 <div class="border border-gray-300 max-sm:p-1 rounded-lg p-4 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Air Pod</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -828,7 +839,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -836,7 +847,7 @@
     
                 <div class="border border-gray-300 max-sm:p-1 rounded-lg p-4 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Watch</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐☆ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -845,7 +856,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -853,7 +864,7 @@
     
                 <div class="border border-gray-300 max-sm:p-1 rounded-lg p-4 shadow-lg">
                     <img src="https://us.danielwellington.com/cdn/shop/files/IWT-intercheangeble-straps-1000x800_1.jpg?v=1728890257&width=768" class="w-full h-40 object-cover rounded-lg">
-                    <div class="mt-4">
+                    <div class="mt-4 pl-2">
                         <h4 class="text-lg font-semibold">Ear Rings</h4>
                         <div class="flex items-center text-yellow-500 text-sm">
                             ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-2">4.8 (12K)</span>
@@ -862,7 +873,7 @@
                             <p class="text-red-500 text-lg font-bold">Tk20</p>
                             <p class="text-gray-500 line-through">Tk40</p>
                         </div>
-                        <button class="mt-4 w-full bg-[#a72d8f] text-white py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
+                        <button class="mt-4 px-5 mx-auto bg-transparent text-[#a72d8f] border border-[#a72d8f]  py-2 rounded-lg hover:bg-[#a72d8f] flex items-center justify-center gap-2">
                             🛒 Add To Cart
                         </button>
                     </div>
@@ -943,6 +954,20 @@
                     </button>
                 </div>
 
+                <div class="max-sm:hidden">
+                    <h3 class="text-lg font-semibold mt-4">Subscribe</h3>
+                    <div class="flex mt-2">
+                        <input type="text" placeholder="Email Address" class="flex-grow w-full px-4 py-2 border border-gray-600 rounded-l-md bg-gray-800 text-white placeholder-gray-400">
+                        <button class="bg-[#a72d8f] hover:bg-blue-700 px-4 py-2 rounded-r-md text-white">SUBSCRIBE</button>
+                    </div>
+                    <p class="text-sm mt-2">By subscribing, you accept the <a href="#" class="text-blue-400 hover:underline">Privacy Policy</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Payment Section -->
+        <div class="footer-payment text-center mt-8">
+            <div class="sm:hidden px-12">
                 <h3 class="text-lg font-semibold mt-4">Subscribe</h3>
                 <div class="flex mt-2">
                     <input type="text" placeholder="Email Address" class="flex-grow w-full px-4 py-2 border border-gray-600 rounded-l-md bg-gray-800 text-white placeholder-gray-400">
@@ -950,10 +975,6 @@
                 </div>
                 <p class="text-sm mt-2">By subscribing, you accept the <a href="#" class="text-blue-400 hover:underline">Privacy Policy</a></p>
             </div>
-        </div>
-
-        <!-- Payment Section -->
-        <div class="footer-payment text-center mt-10">
             <h3 class="text-lg text-[#a72d8f] font-semibold">Payment Option</h3>
             <div class="flex justify-center space-x-4 mt-3">
                 <img class="h-10" src="https://www.logo.wine/a/logo/BKash/BKash-Icon-Logo.wine.svg" alt="BKash">
