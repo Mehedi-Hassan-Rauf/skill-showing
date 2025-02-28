@@ -42,7 +42,7 @@
                 <div class="flex items-center justify-between w-full sm:w-fit space-x-4 mt-4 sm:mt-0">
                     
                     <span class="sm:hidden w-[30%]">
-                        <i class="fa-solid fa-bars text-[#a72d8f] text-3xl cursor-pointer mr-[30%] sm:mr-[0%]"></i>
+                        <i id="menu-toggle" class="fa-solid fa-bars text-[#a72d8f] text-3xl cursor-pointer mr-[30%] sm:mr-[0%]"></i>
                     </span>
                     <div class="text-right min-w-[100px]">
                         <span class="text-gray-600 text-sm flex items-center">
@@ -57,23 +57,61 @@
                         <i class="bi bi-cart-dash text-[#a72d8f] text-xl mr-1"></i>
                         <span>Cart</span>
                     </div>
+                    <!-- Fullscreen Mobile Menu -->
+            <div id="mobile-menu" class="fixed inset-0 bg-white bg-opacity-95 hidden flex flex-col items-start justify-center z-50">
+                <button id="close-menu" class="absolute top-4 right-4 text-gray-800 text-3xl">&times;</button>
+                <ul class="space-y-6 text-gray-800 pl-10 font-semibold text-lg">
+                    <li><a href="#" class="block py-2 hover:text-[#a72d8f]">Home</a></li>
+                    <li><a href="#" class="block py-2 hover:text-[#a72d8f]">All Categories</a></li>
+                    <li><a href="#" class="block py-2 hover:text-[#a72d8f]">About Us</a></li>
+                    <li><a href="#" class="block py-2 hover:text-[#a72d8f]">Blog</a></li>
+                    <li><a href="#" class="block py-2 hover:text-[#a72d8f]">Contact</a></li>
+                    <span class="text-[#a72d8f] font-bold text-sm sm:text-base">Limited Time Offer</span>
+                </ul>
+            </div>
                 </div>
             </div>
         </div>
     
         <!-- Navigation -->
-        <nav class="bg-white w-full max-sm:hidden">
-            <div class="mx-auto py-3 px-4 md:px-8 lg:px-16 gap-4 sm:gap-0 flex flex-wrap items-center justify-between">
-                <ul class="flex max-sm:hid flex-wrap space-x-6 sm:space-x-10 text-gray-800 font-semibold text-sm sm:text-base">
+        <nav class="bg-white w-full hidden sm:block">
+            <div class="mx-auto py-3 px-4 md:px-8 lg:px-16 flex items-center justify-between">
+                <!-- Navigation Links -->
+                <ul id="nav-menu" class="hidden sm:flex flex-wrap space-x-6 sm:space-x-10 text-gray-800 font-semibold text-sm sm:text-base">
                     <li><a href="#" class="hover:text-[#a72d8f]">Home</a></li>
                     <li><a href="#" class="hover:text-[#a72d8f]">All Categories</a></li>
                     <li><a href="#" class="hover:text-[#a72d8f]">About Us</a></li>
                     <li><a href="#" class="hover:text-[#a72d8f]">Blog</a></li>
                     <li><a href="#" class="hover:text-[#a72d8f]">Contact</a></li>
                 </ul>
-                <span class="text-[#a72d8f] font-bold text-sm sm:text-base">Limited Time Offer</span>
+                
+                <!-- Limited Time Offer -->
+                <span class="hidden sm:block text-[#a72d8f] font-bold text-sm sm:text-base">Limited Time Offer</span>
             </div>
+            
+            <!-- Fullscreen Mobile Menu -->
+            <!-- <div id="mobile-menu" class="fixed inset-0 bg-white bg-opacity-95 hidden flex flex-col items-start justify-center z-50">
+                <button id="close-menu" class="absolute top-4 right-4 text-gray-800 text-3xl">&times;</button>
+                <ul class="space-y-6 text-gray-800 pl-10 font-semibold text-lg">
+                    <li><a href="#" class="block py-2 hover:text-[#a72d8f]">Home</a></li>
+                    <li><a href="#" class="block py-2 hover:text-[#a72d8f]">All Categories</a></li>
+                    <li><a href="#" class="block py-2 hover:text-[#a72d8f]">About Us</a></li>
+                    <li><a href="#" class="block py-2 hover:text-[#a72d8f]">Blog</a></li>
+                    <li><a href="#" class="block py-2 hover:text-[#a72d8f]">Contact</a></li>
+                    <span class="text-[#a72d8f] font-bold text-sm sm:text-base">Limited Time Offer</span>
+                </ul>
+            </div> -->
         </nav>
+        
+        <script>
+            document.getElementById('menu-toggle').addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.remove('hidden');
+            });
+            document.getElementById('close-menu').addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        </script>
+        
     </header>
     
     
@@ -136,44 +174,89 @@
         <!--  -->
 
         <section class="flex flex-col w-full gap-6 px-16 max-md:px-8 max-sm:px-4 mt-[175px] sm:mt-[200px] max-w-[1320px]">
+            <!-- Section Title -->
             <div class="flex justify-center items-center">
-                <h3 class="text-4xl max-sm:text-xl font-extrabold text-[#a72d8f] border-b border-[#a72d8f] pb-2">Explore by Categories</h3>
-                
+                <h3 class="text-4xl max-sm:text-xl font-extrabold text-[#a72d8f] border-b border-[#a72d8f] pb-2">
+                    Explore by Categories
+                </h3>
             </div>
-            <div class="flex flex-col w-full md:flex-row gap-20 max-sm:gap-10 max-sm:text-[14px]">
-                <!-- Left Sidebar -->
-                <div class="w-full md:w-1/4 space-y-4">
+            
+            <!-- Sidebar & Gallery Container -->
+            <div class="flex flex-col w-full md:flex-row gap-10 max-sm:gap-6">
+                <!-- Left Sidebar (Mobile Collapsible) -->
+                <div class="w-full md:w-1/4 flex flex-col justify-between space-y-6 max-sm:hidden">
                     <!-- Search Input -->
-                    <div class="flex items-center border rounded-lg px-4 py-2 bg-gray-100">
-                        <i class="bi bi-search text-gray-500"></i>
-                        <input type="text" placeholder="Search essential groceries and more..." class="ml-2 w-full bg-transparent outline-none">
+                    <div class="relative">
+                        <input type="text" placeholder="Search" 
+                            class="w-full px-4 py-2 pl-10 border rounded-lg bg-gray-100 outline-none">
+                        <i class="bi bi-search absolute left-3 top-3 text-gray-500"></i>
                     </div>
-        
+                    
                     <!-- Category List -->
-                    <div class="space-y-2 text-lg font-medium max-sm:flex max-sm:flex-wrap max-sm:gap-2 max-sm:text-[14px]">
-                        <p class="cursor-pointer hover:text-[#a72d8f]">Female Dress</p>
-                        <p class="cursor-pointer hover:text-[#a72d8f]">Jewellery</p>
-                        <p class="cursor-pointer hover:text-[#a72d8f]">Shoes</p>
-                        <p class="cursor-pointer hover:text-[#a72d8f]">Baby Products</p>
-                        <p class="cursor-pointer hover:text-[#a72d8f]">Cosmetics</p>
-                        <p class="cursor-pointer hover:text-[#a72d8f]">Electronics</p>
+                    <div class="h-[300px] overflow-y-auto scrollbar-thin scrollbar-thumb-[#a72d8f] scrollbar-track-gray-200">
+                        <ul class="space-y-8 text-lg font-medium">
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Female Dress</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Jewellery</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Shoes</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Baby Products</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Cosmetics</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Electronics</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Shoes</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Baby Products</li>
+                        </ul>
                     </div>
-        
+                    
                     <!-- View All Button -->
-                    <button class="w-full py-2 bg-[#a72d8f] text-white rounded-lg hover:bg-[#a72d8f]">
-                        View all
+                    <button class="w-full py-2 bg-transparent border border-[#a72d8f] text-[#a72d8f] hover:text-white rounded-lg hover:bg-[#a72d8f]">
+                        All Categories <i class="bi bi-chevron-right"></i>
                     </button>
                 </div>
-        
-                <!-- Image Gallery -->
-                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 w-full md:w-3/4">
-                    <img src="./assets/explore-content1.png" alt="Category" class="rounded-lg">
-                    <img src="./assets/explore-content2.png" alt="Category" class="rounded-lg">
-                    <img src="./assets/explore-content3.png" alt="Category" class="rounded-lg">
-                    <img src="./assets/explore-content1.png" alt="Category" class="rounded-lg">
+                
+                <!-- Mobile Sidebar Toggle -->
+                <div class="md:hidden w-full flex flex-col items-center">
+                    <button id="toggle-sidebar" class="py-2 px-4 bg-transparent hover:bg-[#a72d8f] border border-[#a72d8f] text-[#a72d8f] hover:text-white rounded-lg">
+                        Browse Categories
+                    </button>
+                    <div id="mobile-sidebar" class="hidden w-full space-y-4 mt-4">
+                        <input type="text" placeholder="Search" 
+                            class="w-full px-4 py-2 pl-10 border rounded-lg bg-gray-100 outline-none">
+                        <ul class="space-y-3 text-lg font-medium">
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Female Dress</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Jewellery</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Shoes</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Baby Products</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Cosmetics</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Electronics</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Shoes</li>
+                            <li class="cursor-pointer hover:text-[#a72d8f]">Baby Products</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Image Gallery (Swipeable on Mobile) -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full md:w-3/4 max-sm:overflow-x-auto max-sm:flex max-sm:whitespace-nowrap">
+                    <div class="relative group w-full max-sm:min-w-[80%]">
+                        <img src="./assets/explore-content1.png" alt="Jewellery" class="rounded-lg w-full">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition">
+                            <p class="text-white text-lg font-semibold">Jewellery</p>
+                            <button class="mt-2 px-4 py-2 bg-[#a72d8f] text-white rounded-lg">Explore</button>
+                        </div>
+                    </div>
+                    <img src="./assets/explore-content2.png" alt="Category" class="rounded-lg w-full max-sm:min-w-[80%]">
+                    <img src="./assets/explore-content2.png" alt="Category" class="rounded-lg w-full max-sm:min-w-[80%]">
+                    <img src="./assets/explore-content1.png" alt="Category" class="rounded-lg w-full max-sm:min-w-[80%]">
                 </div>
             </div>
         </section>
+        
+        <script>
+            document.getElementById("toggle-sidebar").addEventListener("click", function() {
+                const sidebar = document.getElementById("mobile-sidebar");
+                sidebar.classList.toggle("hidden");
+            });
+        </script>
+        
+        
         <!--  -->
 
         <section class="flex flex-col w-full gap-6 px-16 max-md:px-8 max-sm:px-4 mt-[60px] max-w-[1320px]">
@@ -414,7 +497,7 @@
             <!-- Product Grid -->
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-6">
                 
-                <img class="w-full max-sm:hidden h-full" src="./assets/electronic-ad.png" alt="" srcset="">
+                <img class="w-full hidden sm:block h-full" src="./assets/electronic-ad.png" alt="" srcset="">
                 <!-- Product Card -->
     
                 <!-- Duplicate Product Cards -->
@@ -486,7 +569,7 @@
                     </div>
                 </div>
 
-                <img class="w-full sm:" src="./assets/electronic-ad.png" alt="" srcset="">
+                <img class="w-full sm:hidden" src="./assets/electronic-ad.png" alt="" srcset="">
     
             </div>
         </section>
